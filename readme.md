@@ -21,6 +21,16 @@ pip install -r requirements.txt
 
 ## Usage
 
+### Configuring OpenAI API Key
+
+WebQA-API requires OpenAI API key to be configured in the ```src/config.py``` file. 
+
+```python
+OPENAI_API_KEY = "YOUR_API_KEY"
+```
+
+### Running WebQA-API
+
 WebQA-API can be run locally using the following command.
 
 ```bash
