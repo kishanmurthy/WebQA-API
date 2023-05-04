@@ -6,9 +6,9 @@ WebQA project allows a user to ask any question on the contents of the webpage u
 - <b>WebQA-Extension</b> - Chrome Extension
 - <b>WebQA-API</b> - Flask API
 
-WebQA-API is a comprehensive solution that offers a cutting-edge question-answer endpoint. It processes incoming JSON post requests containing webpage data and user questions. The API starts by chunking down the webpage data and requesting embeddings from OpenAI. The obtained embeddings and chunked document is then temporarily stored in Chroma vector store.
+WebQA-API offers a cutting-edge question-answer endpoint for webpages. It processes incoming JSON post requests containing webpage data and user questions. The API initially starts by chunking down the webpage data and requesting embeddings from OpenAI. The obtained embeddings and chunked webpage documents are then temporarily stored in Chroma embedding DB.
 
-The API also obtains the question's embedding and employs embedding nearest search to find relevant documents. A specialized prompt is then crafted using the obtained documents and user question, and it's sent to OpenAI API via langchain. Once OpenAI API responds, the WebQA-API forwards the response to form an accurate response to the user.
+The API also obtains the question's embedding and employs embedding nearest search to find relevant documents. A specialized prompt is then crafted using the obtained documents and user questions, and it's sent to OpenAI API via LangChain. Once OpenAI API responds, the WebQA-API forwards the response to form an accurate response to the user.
 
 
 ## Installation
