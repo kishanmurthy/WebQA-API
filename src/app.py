@@ -9,7 +9,7 @@ from question_answer import get_qa_result
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/question_answer', methods=["POST"])
+@app.route('/question-answer', methods=["POST"])
 def question_answer():
 	webpage = request.json['webpage']
 	question = request.json['question']
