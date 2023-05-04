@@ -11,6 +11,38 @@ WebQA-API is a comprehensive solution that offers a cutting-edge question-answer
 The API also obtains the question's embedding and employs embedding nearest search to find relevant documents. A specialized prompt is then crafted using the obtained documents and user question, and it's sent to OpenAI API via langchain. Once OpenAI API responds, the WebQA-API forwards the response to form an accurate response to the user.
 
 
+## Installation
 
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install WebQA-API.
 
+```bash
+pip install -r requirements.txt
+```
 
+## Usage
+
+WebQA-API can be run locally using the following command.
+
+```bash
+python app.py
+```
+
+## API Endpoints
+
+WebQA-API offers the ```/question-answer``` endpoint that takens in json POST request in the following format.
+
+```json
+{
+    "webpage": "CONTENT OF THE WEBPAGE",
+    "question": "QUESTION TO BE ASKED"
+}
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+[MIT](
+https://choosealicense.com/licenses/mit/)
